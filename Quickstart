@@ -1,0 +1,25 @@
+Quickstart (copy/paste)
+
+Create repo directory and add files above.
+
+Edit config.yaml and samples.tsv to point to your files.
+
+Create environment:
+
+conda env create -f environment.yml
+conda activate ribo_env
+
+
+Run pipeline:
+
+bash scripts/00_download_geo.sh config.yaml    # optional: download data
+bash scripts/01_trim_and_rRNA_removal.sh config.yaml
+bash scripts/02_align_star.sh config.yaml
+Rscript scripts/03_psite_riboWaltz.R config.yaml
+bash scripts/04_orf_detection.sh config.yaml
+python3 scripts/05_pause_detection.py
+bash scripts/06_counts_featureCounts.sh config.yaml
+Rscript scripts/07_deseq2_TE.R config.yaml
+
+
+Open analysis/RiboSeq_DESeq2_TE_Analysis.Rmd and knit to view plots & tables.
