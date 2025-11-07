@@ -13,3 +13,6 @@ cmd = ["RiboCode","-i",cfg['gtf'],"-r",psite,"-o",outdir]
 print("Running:", " ".join(cmd))
 subprocess.run(cmd)
 PY
+
+
+## If RiboCode is not available, use RiboTaper or RiboTISH. Outputs: translated ORFs list.
