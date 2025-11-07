@@ -1,0 +1,8 @@
+A documented R Markdown file that:
+
+loads step07_deseq2/differential_TE_results.tsv and TE_log2_per_sample.tsv,
+
+produces MA & volcano plots, TE scatter (RNA vs Ribo fc), top candidate heatmap,
+
+loads step03_riboQC/psite_table.tsv to produce metagene around start codons.
+(You can use the notebook we assembled earlier — paste its code into an .Rmd and knit to HTML/PDF.)
