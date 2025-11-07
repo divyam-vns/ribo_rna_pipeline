@@ -1,0 +1,12 @@
+project_dir: /path/to/ribo_project
+fastq_dir: /path/to/fastq
+output_dir: /path/to/ribo_project/output
+sample_table: samples.tsv
+rrna_index: /path/to/bowtie2_rrna_index
+star_genome_dir: /path/to/STAR_index
+gtf: /path/to/annotation.gtf
+fasta: /path/to/genome.fa
+threads: 8
+adapter_seq: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+ribo_read_min: 25
+ribo_read_max: 35
