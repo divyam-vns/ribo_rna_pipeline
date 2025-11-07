@@ -26,3 +26,5 @@ psite_df <- psite_df(psites)
 dir.create(file.path(proj,"step03_riboQC"), recursive=TRUE, showWarnings=FALSE)
 write_tsv(psite_df, file.path(proj,"step03_riboQC","psite_table.tsv"))
 cat("P-site assignment done\n")
+
+## Note: Requires yaml and riboWaltz installed in R.
