@@ -1,0 +1,30 @@
+
+---
+
+## 2) `environment.yml`
+```yaml
+name: ribo_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - r-base=4.2
+  - cutadapt
+  - fastqc
+  - bowtie2
+  - star
+  - samtools
+  - subread        # featureCounts
+  - bedtools
+  - r-essentials
+  - r-deseq2
+  - r-ribowaltz
+  - r-tidyverse
+  - r-pheatmap
+  - r-rmarkdown
+  - pip
+  - pip:
+    - ribocode        # if available via pip, else install from source
+    - pysam
