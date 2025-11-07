@@ -17,3 +17,6 @@ for s in srrs:
     subprocess.run(cmd2)
 PY
 echo "Download done (edit script to set actual SRR IDs)."
+
+
+##Edit srrs with the runs you want (retrieve from GEO accession pages).
